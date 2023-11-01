@@ -2,10 +2,7 @@ import java.util.*;
 
 public class MediaLibrary  {
 
-    /**
-     * attributes:
-     * library - list of 
-     */
+    /*I addded this here and removed comment */
     private List<Label<String, Media>> library;
 
     /**
