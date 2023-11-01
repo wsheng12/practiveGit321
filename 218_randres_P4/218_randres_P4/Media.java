@@ -1,21 +1,23 @@
-public abstract class Media implements Comparable<Media>{
+//I LOVE MEDIA!
+public abstract class Media implements Comparable<Media> {
 
-   /**
-    * attributes:
-    *isbn = unique string to identify object
-    *genre = genre of media
-    format = enum of different types of formats
-    */
+    /**
+     * attributes:
+     * isbn = unique string to identify object
+     * genre = genre of media
+     * format = enum of different types of formats
+     */
 
     private String isbn;
     private String genre;
     private Format format;
 
     /**
-     * Constructor - sets format, isbn, and genre to their respective private variables
+     * Constructor - sets format, isbn, and genre to their respective private
+     * variables
      * 
      */
-    
+
     public Media(Format format, String isbn, String genre) {
         this.isbn = isbn;
         this.genre = genre;
@@ -34,7 +36,7 @@ public abstract class Media implements Comparable<Media>{
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Media)
-            if (((Media)obj).getIsbn().equals(this.isbn))
+            if (((Media) obj).getIsbn().equals(this.isbn))
                 return true;
         return false;
     }
@@ -54,5 +56,5 @@ public abstract class Media implements Comparable<Media>{
     public String toString() {
         return ("Type: " + getType() + ", ISBN: " + isbn + ", Genre: " + genre + ", Format: " + format);
     }
-    
+
 }
