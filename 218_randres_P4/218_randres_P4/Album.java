@@ -2,7 +2,7 @@ import java.util.*;
 
 //album comment added
 public class Album extends Music {
-
+    /**CHANGED HEREEEEE */
     /**
      * attribute:
      * ArrayList of tracks
