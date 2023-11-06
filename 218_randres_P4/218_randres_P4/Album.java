@@ -1,5 +1,6 @@
 import java.util.*;
 
+//album comment added
 public class Album extends Music {
 
     /**
